@@ -1,0 +1,33 @@
+sudo yum install -y git vim yum-utils device-mapper-persistent-data lvm2
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+sudo ~/.rbenv/plugins/ruby-build/install.sh
+sudo yum install -y bzip2 gcc openssl-devel readline-devel zlib-devel
+rbenv install -l
+rbenv install 2.6.1
+rbenv global 2.6.1
+gem update --system
+yum install mysql-devel
+
+bundle exec rails new . -B -d mysql --skip-turbolinks --skip-test
+bundle install --path vendor/bundle
+
+
+# docker導入手順
+sudo yum -y install lvm2 device-mapper device-mapper-persistent-data device-mapper-event device-mapper-libs device-mapper-event-libs
+sudo yum  -y remove  docker-common docker container-selinux docker-selinux docker-engine
+
+
+# mysqlに関して
+https://xn--o9j8h1c9hb5756dt0ua226amc1a.com/?p=279
+# 最新版をインストールするため、MySQL の公式リポジトリをダウンロード
+$ sudo rpm -ivh https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
+# 追加したリポジトリを利用して、MySQL の最新版をインストール
+$ sudo yum install mysql-community-server --enablerepo=mysql80-community
+# サーバー起動時に MySQL も自動起動するように設定
+$ sudo systemctl enable mysqld
+
+
+bootstrapを入れる時にsudo yum -y install gcc-c++を入れてエラーを解消した
