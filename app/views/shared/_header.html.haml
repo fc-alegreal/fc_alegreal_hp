@@ -21,7 +21,7 @@
           = icon "fab", "instagram", "Instagram"
     %div.my-2.my-lg-0
       - if user_signed_in?
-        = link_to icon("fa", "user", "ユーザー管理"), "/", { class: "" }
+        = link_to icon("fa", "user", "ユーザー管理"), edit_user_registration_path, { class: "" }
         = link_to "ログアウト", destroy_user_session_path, class: 'navbar-link'
       - else
         = link_to "ログイン", new_user_session_path, class: "btn btn-outline-success my-2 my-sm-0"
