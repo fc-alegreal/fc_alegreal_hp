@@ -5,7 +5,12 @@ Rails.application.routes.draw do
   get '/team', to: 'team#index'
   get '/schedule', to: 'schedule#index'
 
-  devise_for :users
+  devise_for :users, skip: [:sessions]
+  devise_scope :user do
+    get 'login' => 'devise/sessions#new', as: :new_user_session
+    post 'login' => 'devise/sessions#create', as: :user_session
+    get 'logout' => 'devise/sessions#destroy', as: :destroy_user_session
+  end
 
   get '*not_found' => 'errors#routing_error'
   post '*not_found' => 'errors#routing_error'

@@ -14,6 +14,8 @@
         = link_to "スケジュール", "/schedule", { class: "nav-link" }
       %li.nav-item
         = link_to "Instagram", "/instagram", { class: "nav-link" }
-    %form.form-inline.my-2.my-lg-0
-      %input.form-control.mr-sm-2{ type: "search", placeholder: "検索", aria: { label: "Search" } }
-      %button.btn.btn-outline-success.my-2.my-sm-0{ type: "submit" } 検索
+    %div.my-2.my-lg-0
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, class: 'navbar-link'
+      - else
+        = link_to "ログイン", new_user_session_path, class: "btn btn-outline-success my-2 my-sm-0"
