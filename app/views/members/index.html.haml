@@ -1,0 +1,33 @@
+%h1 Listing members
+
+%table.table
+  %thead
+    %tr
+      %th 名前
+      %th ニックネーム
+      %th メールアドレス
+      %th 役割
+      %th 背番号
+      %th ポジション
+      %th メッセージ
+      %th
+      %th
+      %th
+
+  %tbody
+    - @members.each do |member|
+      %tr
+        %td= member.name
+        %td= member.nickname
+        %td= member.mail
+        %td 役割
+        %td= member.number
+        %td ポジション
+        %td= member.message
+        %td= link_to 'Show', member
+        %td= link_to 'Edit', edit_member_path(member)
+        %td= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Member', new_member_path
