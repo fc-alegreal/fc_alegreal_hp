@@ -5,17 +5,23 @@
   %div#navbarNavAltMarkup.collapse.navbar-collapse
     %ul.navbar-nav.mr-auto
       %li.nav-item
-        = link_to "ホーム", "/", { class: "nav-link" }
+        = link_to "/", { class: "nav-link" } do
+          = icon "fas", "home", "ホーム"
       %li.nav-item
-        = link_to "チーム紹介", "/team", { class: "nav-link" }
+        = link_to "/team", { class: "nav-link" } do
+          = icon "far", "futbol", "チーム紹介"
       %li.nav-item
-        = link_to "メンバー紹介", "/members", { class: "nav-link" }
+        = link_to "/", { class: "nav-link" } do
+          = icon "fas", "users", "メンバー紹介"
       %li.nav-item
-        = link_to "スケジュール", "/schedule", { class: "nav-link" }
+        = link_to "/schedule", { class: "nav-link" } do
+          = icon "fas", "calendar-alt", "スケジュール"
       %li.nav-item
-        = link_to "Instagram", "/instagram", { class: "nav-link" }
+        = link_to "/", { class: "nav-link" } do
+          = icon "fab", "instagram", "Instagram"
     %div.my-2.my-lg-0
       - if user_signed_in?
+        = link_to icon("fa", "user", "ユーザー管理"), "/", { class: "" }
         = link_to "ログアウト", destroy_user_session_path, class: 'navbar-link'
       - else
         = link_to "ログイン", new_user_session_path, class: "btn btn-outline-success my-2 my-sm-0"
