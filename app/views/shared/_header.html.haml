@@ -19,6 +19,17 @@
       %li.nav-item
         = link_to "/", { class: "nav-link" } do
           = icon "fab", "instagram", "Instagram"
+      - if user_signed_in?
+        %li.nav-item.dropdown
+          %a#navbarDropdown.nav-link.dropdown-toggle{ href: "#", role: "button", data: { toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" } } メンバー限定
+          %div.dropdown-menu{ aria: { labelledby: "navbarDropdown" } }
+            = link_to "初めての方へ", "#", class: "dropdown-item"
+            = link_to "各種購入申請", "#", class: "dropdown-item"
+            = link_to "会計情報", "#", class: "dropdown-item"
+            %div.dropdown-divider
+            = link_to "メンバー管理", "#", class: "dropdown-item"
+            = link_to "スケジュール管理", "#", class: "dropdown-item"
+            = link_to "投稿管理", "#", class: "dropdown-item"
     %div.my-2.my-lg-0
       - if user_signed_in?
         = link_to icon("fa", "user", "ユーザー管理"), edit_user_registration_path, { class: "" }
