@@ -1,5 +1,5 @@
 current directory: /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c
-/home/vagrant/.rbenv/versions/2.6.1/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190301-7565-hejzzt.rb extconf.rb
+/home/vagrant/.rbenv/versions/2.6.1/bin/ruby -I /home/vagrant/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190303-10258-d4dln4.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
@@ -18,7 +18,7 @@ make "DESTDIR="
 Configuring libffi
 make -C "/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux"
 make[1]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux'
-make 'AR_FLAGS=' 'CC_FOR_BUILD=' 'CFLAGS=-Wall -fexceptions' 'CXXFLAGS=' 'CFLAGS_FOR_BUILD=' 'CFLAGS_FOR_TARGET=' 'INSTALL=/usr/bin/install -c' 'INSTALL_DATA=/usr/bin/install -c -m 644' 'INSTALL_PROGRAM=/usr/bin/install -c' 'INSTALL_SCRIPT=/usr/bin/install -c' 'JC1FLAGS=' 'LDFLAGS=' 'LIBCFLAGS=' 'LIBCFLAGS_FOR_TARGET=' 'MAKE=make' 'MAKEINFO=/bin/sh /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi/missing makeinfo ' 'PICFLAG=' 'PICFLAG_FOR_TARGET=' 'RUNTESTFLAGS=' 'SHELL=/bin/sh' 'exec_prefix=/usr/local' 'infodir=/usr/local/share/info' 'libdir=/usr/local/lib' 'mandir=/usr/local/share/man' 'prefix=/usr/local' 'AR=ar' 'AS=as' 'CC=gcc' 'CXX=g++' 'LD=/usr/bin/ld' 'NM=/usr/bin/nm -B' 'RANLIB=ranlib' 'DESTDIR=' all-recursive
+make 'AR_FLAGS=' 'CC_FOR_BUILD=' 'CFLAGS=-Wall -fexceptions' 'CXXFLAGS=-g -O2' 'CFLAGS_FOR_BUILD=' 'CFLAGS_FOR_TARGET=' 'INSTALL=/usr/bin/install -c' 'INSTALL_DATA=/usr/bin/install -c -m 644' 'INSTALL_PROGRAM=/usr/bin/install -c' 'INSTALL_SCRIPT=/usr/bin/install -c' 'JC1FLAGS=' 'LDFLAGS=' 'LIBCFLAGS=' 'LIBCFLAGS_FOR_TARGET=' 'MAKE=make' 'MAKEINFO=/bin/sh /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi/missing makeinfo ' 'PICFLAG=' 'PICFLAG_FOR_TARGET=' 'RUNTESTFLAGS=' 'SHELL=/bin/sh' 'exec_prefix=/usr/local' 'infodir=/usr/local/share/info' 'libdir=/usr/local/lib' 'mandir=/usr/local/share/man' 'prefix=/usr/local' 'AR=ar' 'AS=as' 'CC=gcc' 'CXX=g++' 'LD=/usr/bin/ld' 'NM=/usr/bin/nm -B' 'RANLIB=ranlib' 'DESTDIR=' all-recursive
 make[2]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux'
 Making all in include
 make[3]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux/include'
@@ -100,7 +100,7 @@ current directory: /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ff
 make "DESTDIR=" install
 make -C "/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux"
 make[1]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux'
-make 'AR_FLAGS=' 'CC_FOR_BUILD=' 'CFLAGS=-Wall -fexceptions' 'CXXFLAGS=' 'CFLAGS_FOR_BUILD=' 'CFLAGS_FOR_TARGET=' 'INSTALL=/usr/bin/install -c' 'INSTALL_DATA=/usr/bin/install -c -m 644' 'INSTALL_PROGRAM=/usr/bin/install -c' 'INSTALL_SCRIPT=/usr/bin/install -c' 'JC1FLAGS=' 'LDFLAGS=' 'LIBCFLAGS=' 'LIBCFLAGS_FOR_TARGET=' 'MAKE=make' 'MAKEINFO=/bin/sh /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi/missing makeinfo ' 'PICFLAG=' 'PICFLAG_FOR_TARGET=' 'RUNTESTFLAGS=' 'SHELL=/bin/sh' 'exec_prefix=/usr/local' 'infodir=/usr/local/share/info' 'libdir=/usr/local/lib' 'mandir=/usr/local/share/man' 'prefix=/usr/local' 'AR=ar' 'AS=as' 'CC=gcc' 'CXX=g++' 'LD=/usr/bin/ld' 'NM=/usr/bin/nm -B' 'RANLIB=ranlib' 'DESTDIR=' all-recursive
+make 'AR_FLAGS=' 'CC_FOR_BUILD=' 'CFLAGS=-Wall -fexceptions' 'CXXFLAGS=-g -O2' 'CFLAGS_FOR_BUILD=' 'CFLAGS_FOR_TARGET=' 'INSTALL=/usr/bin/install -c' 'INSTALL_DATA=/usr/bin/install -c -m 644' 'INSTALL_PROGRAM=/usr/bin/install -c' 'INSTALL_SCRIPT=/usr/bin/install -c' 'JC1FLAGS=' 'LDFLAGS=' 'LIBCFLAGS=' 'LIBCFLAGS_FOR_TARGET=' 'MAKE=make' 'MAKEINFO=/bin/sh /home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi/missing makeinfo ' 'PICFLAG=' 'PICFLAG_FOR_TARGET=' 'RUNTESTFLAGS=' 'SHELL=/bin/sh' 'exec_prefix=/usr/local' 'infodir=/usr/local/share/info' 'libdir=/usr/local/lib' 'mandir=/usr/local/share/man' 'prefix=/usr/local' 'AR=ar' 'AS=as' 'CC=gcc' 'CXX=g++' 'LD=/usr/bin/ld' 'NM=/usr/bin/nm -B' 'RANLIB=ranlib' 'DESTDIR=' all-recursive
 make[2]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux'
 Making all in include
 make[3]: Entering directory `/home/vagrant/fc_alegreal_hp/vendor/bundle/ruby/2.6.0/gems/ffi-1.10.0/ext/ffi_c/libffi-x86_64-linux/include'
@@ -148,4 +148,4 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.so
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20190301-7565-5g2qbd
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20190303-10258-15jg14x
