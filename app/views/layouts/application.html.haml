@@ -7,11 +7,11 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
-  %body{ style: "padding-top: 40px;padding-bottom: 40px;" }
+  %body
     %header.fixed-top
       = render partial: 'shared/header'
     - if @header_content
-      .header-img
+      #header-content
         = render partial: 'shared/carousel'
     = yield
     %footer.fixed-bottom
