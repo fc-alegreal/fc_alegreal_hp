@@ -10,6 +10,9 @@
   %body.pt-5
     %header.fixed-top
       = render partial: 'shared/header'
+    - if @header_content
+      .header-img
+        = render partial: 'shared/carousel'
     = yield
     %footer
       = render partial: 'shared/footer'
